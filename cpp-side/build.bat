@@ -1,0 +1,1 @@
+D:\Android-NDK-r10d\ndk-build

@@ -1,0 +1,13 @@
+#pragma once
+#include "vertexbuffer.h"
+#include "shader.h"
+class ParticleSystem{
+	Shader *mShader;
+	VertexBuffer *mVertexBuffer;
+	glm::mat4 mModelMatrix;
+	GLuint mTexture;
+public:
+	void Init(float x,float y,float z);
+	void Draw(glm::mat4 & viewMatrix,glm::mat4 & projectionMatrix);
+	void Update(float deltaTime);
+};
